@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:700|Italiana|Lato:300|Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Italiana|Lato:300|Roboto:300');
 
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
@@ -15,15 +15,10 @@ html{
 body{
     background-color: #201e21;
     color: white;
-    /* max-width: 1440px; */
     margin: 0 auto;
     font-family: 'Italiana', serif;
 }
-/* .siteWrapper{
-    width: 1600px;
-    max-width: 1600px;
-    margin: 0 auto;
-} */
+
 .wrapper{
     margin: 0 auto;
     width: 80%;
@@ -95,7 +90,7 @@ header{
     background-position: center center;
     height: 100vh;
 }
-header ul{
+.socialNav ul{
     margin: 50px;
 }
 .burgerMenu{
@@ -106,8 +101,8 @@ header ul{
 }
 .title{
     position: absolute;
-    top: 260px;
-    left: 15vw;
+    top: 190px;
+    left: 240px;
     white-space: nowrap;
 }
 .title p{
@@ -116,7 +111,7 @@ header ul{
     font-size: 1.7rem;
     color: #faba63;
     margin: 0;
-    margin-left: 9.5rem;
+    margin-left: 200px;
 }
 h1 span{
     margin-left: 9rem;
@@ -124,9 +119,7 @@ h1 span{
 }
 .mainNav{
     font-family: 'Lato', sans-serif;
-    position: absolute;
-    top: 10px;
-    left: 40px;
+    margin-top: 30px;
 }
 .mainNav li{
     float: left;
@@ -187,6 +180,7 @@ h1 span{
 }
 .latestCollection h2{
     text-align: center;
+    padding: 50px 0 0 0;
     margin-bottom: 86px;
 }
 .latestCollection img{
@@ -250,10 +244,14 @@ h1 span{
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
     font-size: 1rem;
+    padding-bottom: 20px;
     margin-bottom: 20px;
     font-weight: 300;
     max-width: 513px;
     color: #fafafa;
+}
+.mixAndMatchText p{
+    max-width: 555px;
 }
 
 footer{
@@ -286,18 +284,18 @@ input[type=email]{
     width: 480px;
     text-align: left;
     padding-left: 33px;
+    font-family: 'Roboto', sans-serif;
 }
 input[type="submit"]{
-    font-family: 'Catamaran', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: black;
-  color: white;
-  padding: 0 20px;
+    font-family: 'Italiana', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: black;
+     color: white;
+     padding: 0 20px;
     transition: ease-in-out 0.3s;
     height: 50px;
-  /* width: 20%; */
-  /* min-width: 120px; */
 }
 input[type="submit"]:hover{
     background: white;
@@ -308,7 +306,6 @@ input[type="submit"]:hover{
     float: left;
     text-align: right;
     padding-bottom:  100px;
-   
 }
 .contact h5{
     font-family: 'Roboto', sans-serif;
@@ -355,7 +352,7 @@ input[type=email]{
     display: none;
 }
 .sustainableMaterialsText, .mixAndMatchText {
-    padding: 125px 100px 50px;
+    padding: 125px 20px 50px;
     float: left;
     width: 60%;
 }
@@ -364,13 +361,13 @@ input[type=email]{
 }
 
 
-@media (max-width : 800px) {
+@media (max-width : 700px) {
     *{
         float: none;
     }
     h2{
         font-size: 30px;
-        padding-top: 50px;
+        padding-top: 30px;
     }
     h4{
         font-size: 25px;
@@ -394,7 +391,7 @@ input[type=email]{
         display: block;
     }
     .title{
-        top: 150px;
+        top: 28vh;
         left: 10px;
     }
         .title p{
@@ -441,8 +438,8 @@ input[type=email]{
         font-size: 20px;
         font-weight: 300;
         line-height: 1.45;
-        margin: 25px 0 50px;
-        max-width: 100%;
+        margin: 25px 0 40px;
+    max-width: 360px;
     }
     .sustainableMaterialsImage img, .mixAndMatchImage img {
     padding-top: 0;
@@ -479,7 +476,7 @@ input[type=email]{
         width: 100%;
     }
     .sustainableMaterialsText, .mixAndMatchText {
-    padding: 25px 25px 50px;
+    padding: 25px 25px 60px;
      text-align: center;
     }
     .sustainableMaterialsText h2 {
@@ -487,6 +484,9 @@ input[type=email]{
 }
     footer{
         padding-top: 50px;
+    }
+    footer h4:first-child{
+        margin: 20px 0;
     }
     .footerNav, .subscribe, .contact, input[type="submit"], input[type=text] {
         width: 100%;
@@ -519,7 +519,9 @@ input[type=email]{
     text-align: center;
     padding: 0;
     }
-   
+   h5 span{
+       display: inline;
+   }
 
 
 }
