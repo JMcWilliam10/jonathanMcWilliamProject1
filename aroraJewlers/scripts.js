@@ -5,10 +5,13 @@ $(function() {
         "./images/mobileImages/image-2.png";
       document.querySelector(".galleryImageTwo").src =
         "./images/mobileImages/image-2-copy.png";
+      document.querySelector(".handCraftedImage").src =
+        "./images/mobileImages/image-6.png";
     } else if ($(window).width() > 800) {
       document.querySelector(".galleryImageOne").src = "./images/image-2.png";
       document.querySelector(".galleryImageTwo").src =
         "./images/image-2-copy.png";
+      document.querySelector(".handCraftedImage").src = "./images/image-6.png";
     }
   };
   imageSwapper();

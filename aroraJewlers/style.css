@@ -7,11 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
-/* COLORS */
-/* #201e21;
-orange: #faba63; */
-/* COLORS */
-/* Universal Styles */
+
 html{
     font-size: 125%;
 }
@@ -23,15 +19,13 @@ body{
     margin: 0 auto;
     font-family: 'Italiana', serif;
 }
-.siteWrapper{
+/* .siteWrapper{
     width: 1600px;
     max-width: 1600px;
     margin: 0 auto;
-}
+} */
 .wrapper{
     margin: 0 auto;
-    width: 1280px;
-    max-width: 1280px;
     width: 80%;
     max-width: 80%;
 
@@ -40,10 +34,6 @@ img{
     width: 100%;
     max-width: 100%;
 }
-main{
-    max-width: 1600px;
-}
-
 .readMore{
   width: 160px;
   height: 50px;
@@ -60,18 +50,10 @@ main{
     color: black;
     transition: ease-in-out 0.3s;
 }
-/* Universal Styles End */
 
-/* Reset Typography */
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
-/* Typography */
-    .handCrafted p, .sustainableMaterialsText p, .mixAndMatchText p{
-        font-family: 'Lato', sans-serif;
-        font-weight: 300px;
-    }
-    /* Typography */
 a{
     text-decoration: none;
     color: white;
@@ -81,11 +63,10 @@ p{
 }
 h2{
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 51px;
 }
 h1{
     font-size: 122px;
-    /* font-size: 5rem; */
     text-transform: uppercase;
 }
 h4{
@@ -101,7 +82,6 @@ ul{
     padding-left: 0;
     list-style: none;
     margin: 0;
-    /* margin-left: 50px; */
 }
 li a{
     color: white;
@@ -199,6 +179,9 @@ h1 span{
 .latestCollection {
     margin: 101px 0 179px 0;
 }
+.latestCollection:last-child{
+        padding-top: 25px;
+}
 .latestCollectionGallery{
     text-align: center;
 }
@@ -235,16 +218,6 @@ h1 span{
 .middleNavIcon{
     width: 33%;
 }
-.middleNavIcon1{
-    /* margin-left: 300px; */
-    /* width: 45%; */
-}
-/* .middleNavIcon2{
-    width: 10%;
-}
-.middleNavIcon3{
-    width: 45%;
-} */
 
 .middleNav h3{
     font-size: 30px;
@@ -262,6 +235,10 @@ h1 span{
     width: 50%;
     float: left;
 }
+
+.sustainableMaterialsText h2{
+    width: 100px;
+}
 .sustainableMaterialsText, .mixAndMatchText{
     padding: 125px 100px 50px;
     float: left;
@@ -269,11 +246,14 @@ h1 span{
 .sustainableMaterialsImage{
     float: right;
 }
-.sustainableMaterialsText p, .mixAndMatchText p{
+.sustainableMaterialsText p, .mixAndMatchText p {
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
     font-size: 1rem;
     margin-bottom: 20px;
+    font-weight: 300;
+    max-width: 513px;
+    color: #fafafa;
 }
 
 footer{
@@ -288,6 +268,9 @@ footer{
     width: 20%;
     float: left;
 }
+    .footerNav li a:hover{
+        color: #faba63;
+    }
 .subscribe{
     width: 60%;
     float: left;
@@ -330,9 +313,6 @@ input[type="submit"]:hover{
 .contact h5{
     font-family: 'Roboto', sans-serif;
 }
-.phone{
-    display: block;
-}
 
 .copyright{
     font-family: 'Lato', sans-serif;
@@ -354,16 +334,9 @@ input[type="submit"]:hover{
 } */
 
 
-/* Source: https://css-tricks.com/snippets/css/fluid-typography/*/
-/* @media screen and (min-width: 320px) {
-  html {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 680));
-  }
-} */
 
 
 @media (max-width: 1000px) {
-
 input[type=email]{
     height: 50px;
     width: 100%;
@@ -378,19 +351,22 @@ input[type=email]{
 .half{
     width: 40%;
 }
+.half span{
+    display: none;
+}
 .sustainableMaterialsText, .mixAndMatchText {
     padding: 125px 100px 50px;
     float: left;
     width: 60%;
 }
-
+.phone{
+    display: block;
+}
 
 
 @media (max-width : 800px) {
-/* Styles */
     *{
         float: none;
-        /* clear: both; */
     }
     h2{
         font-size: 30px;
@@ -418,8 +394,13 @@ input[type=email]{
         display: block;
     }
     .title{
-        top: 100px;
+        top: 150px;
         left: 10px;
+    }
+        .title p{
+        font-size: 17.3px;
+        margin-left:105px;
+        margin-top: -10px;
     }
     .burgerMenu{
         display: block;
@@ -429,25 +410,24 @@ input[type=email]{
     }
        h1 span{
         margin-left: 5rem;
+        margin-top: -20px;
     }
-    .title p{
-        font-size: 17.3px;
-        margin-left:105px;
+
+    .handCrafted{
+         padding: 50px 0 0 0;
     }
-    .handcrafted{
-        padding-bottom: 0;
-    }
+
     .handCrafted img, .handCraftedText{
         float: none;
     }
     .handCrafted img{
         width: 100%;
     }
-    .handCraftedText{
-        width: 100%;
-        padding-left: 0; 
-        text-align: center;
-    }
+    .handCraftedText {
+    width: 100%;
+    padding: 0 0 50px;
+    text-align: center;
+}
     .handCrafted h2{
         margin-top: 0;
     }
@@ -461,7 +441,8 @@ input[type=email]{
         font-size: 20px;
         font-weight: 300;
         line-height: 1.45;
-        margin: 50px 0;
+        margin: 25px 0 50px;
+        max-width: 100%;
     }
     .sustainableMaterialsImage img, .mixAndMatchImage img {
     padding-top: 0;
@@ -501,6 +482,9 @@ input[type=email]{
     padding: 25px 25px 50px;
      text-align: center;
     }
+    .sustainableMaterialsText h2 {
+    width: 100%;
+}
     footer{
         padding-top: 50px;
     }
@@ -518,7 +502,6 @@ input[type=email]{
         margin-right: 20px;
         /* width: 25%; */
     }
-    .footerNav ul li:last-child{}
     .contact{
         margin-top: 40px;
         padding-bottom: 50px;
@@ -535,7 +518,13 @@ input[type=email]{
     input[type=email]{
     text-align: center;
     padding: 0;
-}
+    }
+   
+
 
 }
+@media (max-width: 500px) {
+
+}
+/* TODO */
 /* Organize code into alphabetical */
